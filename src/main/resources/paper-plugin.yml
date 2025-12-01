@@ -1,0 +1,11 @@
+name: ProtectionModule
+version: '1.0-SNAPSHOT'
+main: com.daytheipc.protectionmodule.ProtectionModule
+api-version: '1.21'
+
+dependencies:
+  server:
+    CraftEngine:
+      load: BEFORE
+      required: false
+      join-classpath: true
