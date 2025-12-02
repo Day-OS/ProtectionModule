@@ -40,7 +40,7 @@ class ProtectionModuleBehavior(
             ): ProtectionModuleBehavior {
                 Bukkit.getServer().consoleSender.sendMessage("AAAAAAAAAAAAAAAAAAAAAAAAAA")
                 val property = ResourceConfigUtils.requireNonNullOrThrow(
-                    block.getProperty("pm:energy"),
+                    block.getProperty("energy"),
                     "warning.config.block.behavior.protection.missing_energy"
                 );
                 val energyProperty = property as IntegerProperty

@@ -20,7 +20,6 @@ class ProtectionModule : JavaPlugin() {
     }
 
     override fun onLoad() {
-        Properties.register(Key.from("pm:energy"), IntegerProperty.FACTORY )
         BlockBehaviors.register(
             Key.from("pm:battery"),
             ProtectionModuleBehavior.FACTORY
